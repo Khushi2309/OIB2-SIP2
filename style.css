@@ -1,0 +1,67 @@
+/* Custom styles */
+body {
+    perspective: 1000px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    will-change: transform;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card-content {
+    transform: rotateY(0deg);
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(15deg) rotateX(5deg);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transform: translateZ(50px);
+}
+
+.card h2 {
+    transform: translateZ(30px);
+}
+
+.card p {
+    transform: translateZ(20px);
+}
+
+/* Custom styles for buttons, form fields, and general layout */
+form input, form textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+}
+
+form button:hover {
+    background-color: #2563eb; /* Darker blue */
+}
+
+/* Customize hover effects for the project cards */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    will-change: transform;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: rotateY(5deg) rotateX(3deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
